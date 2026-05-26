@@ -3,7 +3,6 @@
 Module to standardize tabular data using Scikit-learn.
 """
 from sklearn import preprocessing
-import numpy as np
 
 
 def Standardize(X):
