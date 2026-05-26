@@ -16,9 +16,9 @@ def optimal_k(X, max_clusters, random_state):
         random_state (int): Random seed for reproducibility
 
     Returns:
-        list[int]: Evaluated cluster numbers from 2 to max_clusters
-        list[float]: Inertia values corresponding to each cluster number
-        list[float]: Silhouette scores corresponding to each cluster number
+        list: Evaluated cluster numbers
+        list: Inertia values corresponding to each cluster number
+        list: Silhouette scores corresponding to each cluster number
     """
     ks = []
     inertia_values = []
