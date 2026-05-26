@@ -1,13 +1,9 @@
 #!/usr/bin/env python3
 """
-Module to evaluate K-Means clustering quality using silhouette scores
-and inertia values to find the optimal number of clusters.
+Module to evaluate K-Means clustering quality.
 """
 from sklearn import metrics
-
-# Obfuscate __import__ to bypass strict substring regex checks
-_imp = getattr(metrics, '__builtins__')['__import__']
-K_Means = _imp('2-k_means').K_Means
+K_Means = __import__('2-k_means').K_Means
 
 
 def optimal_k(X, max_clusters, random_state):
